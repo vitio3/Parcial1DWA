@@ -4,18 +4,20 @@
   <meta charset="UTF-8">
   <title>Pedido de Pizza</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 <body>
   <h1>Formulario de Pedido de Pizza</h1>
 
-  <div class="seccion azul">
+  <div class="seccion datos">
     <h3>Datos Cliente</h3>
     <input id="nombre" placeholder="Nombre Cliente">
     <input id="telefono" placeholder="Teléfono">
     <input id="direccion" placeholder="Dirección">
   </div>
 
-  <div class="seccion amarillo">
+  <div class="seccion pizza">
     <h3>Pizzas</h3>
     <input type="number" id="cantPizza" value="1" min="1">
     
@@ -39,7 +41,7 @@
     <button onclick="addPizza()">Agregar Pizza</button>
   </div>
 
-  <div class="seccion celeste">
+  <div class="seccion bebidas">
     <h3>Bebidas</h3>
     <select id="bebida">
       <option value="Coca Cola">Coca Cola $3.5</option>
@@ -50,7 +52,7 @@
     <button onclick="addBebida()">Agregar Bebida</button>
   </div>
 
-  <div class="seccion verde">
+  <div class="seccion resumen">
     <h3>Resumen Pedido</h3>
     <table id="tabla">
       <tr>
