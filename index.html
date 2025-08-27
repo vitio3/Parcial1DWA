@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Pedido de Pizza</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Formulario de Pedido de Pizza</h1>
+
+  <div class="seccion azul">
+    <h3>Datos Cliente</h3>
+    <input id="nombre" placeholder="Nombre Cliente">
+    <input id="telefono" placeholder="Teléfono">
+    <input id="direccion" placeholder="Dirección">
+  </div>
+
+  <div class="seccion amarillo">
+    <h3>Pizzas</h3>
+    <input type="number" id="cantPizza" value="1" min="1">
+    
+    
+    <select id="esp">
+      <option value="Hawaiana">Hawaiana</option>
+      <option value="Pepperoni">Pepperoni</option>
+      <option value="Suprema">Suprema</option>
+      <option value="Vegetariana">Vegetariana</option>
+    </select>
+    
+    <select id="tamano">
+      <option value="5">Personal $5</option>
+      <option value="9">Familiar $9</option>
+    </select>
+    <br>
+    <input type="checkbox" value="1" class="extra"> Queso $1
+    <input type="checkbox" value="1.5" class="extra"> Tocino $1.5
+    <input type="checkbox" value="0.75" class="extra"> Hongos $0.75
+    <br>
+    <button onclick="addPizza()">Agregar Pizza</button>
+  </div>
+
+  <div class="seccion celeste">
+    <h3>Bebidas</h3>
+    <select id="bebida">
+      <option value="Coca Cola">Coca Cola $3.5</option>
+      <option value="Pepsi">Pepsi $3.5</option>
+      <option value="Agua">Agua $2</option>
+    </select>
+    <input type="number" id="cantBebida" value="1" min="1">
+    <button onclick="addBebida()">Agregar Bebida</button>
+  </div>
+
+  <div class="seccion verde">
+    <h3>Resumen Pedido</h3>
+    <table id="tabla">
+      <tr>
+        <th>Tipo</th><th>Descripción</th><th>Cant</th><th>Precio</th><th>Sub</th><th></th>
+      </tr>
+    </table>
+    <p>Total: $<span id="total">0</span></p>
+    <button onclick="confirmar()">Confirmar Pedido</button>
+  </div>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>
