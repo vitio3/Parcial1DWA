@@ -57,7 +57,7 @@ function addBebida(){
   fila.insertCell(3).innerHTML="$"+precio.toFixed(2);
   fila.insertCell(4).innerHTML="$"+sub.toFixed(2);
   var c5=fila.insertCell(5);
-  c5.innerHTML="<button onclick='borrar(this,"+sub+")'>Eliminar</button>";
+  c5.innerHTML="<button  onclick='borrar(this,"+sub+")' >Eliminar</button>";
 
   document.getElementById("total").innerHTML=total.toFixed(2);
 }
